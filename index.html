@@ -8,7 +8,7 @@
   <title>KustHein | Portfólio</title>
   <style>
     :root {
-      --bg: src="bg.png";
+      --bg: #000000;
       --panel: #1b1e21;
       --panel-hover: #23272b;
       --text: #f3f3f3;
@@ -18,6 +18,7 @@
       --border: #34393e;
       --radius: 16px;
       --max-width: 1050px;
+      --wallpaper: url("bg.png");
     }
 
     * { box-sizing: border-box; }
@@ -25,8 +26,7 @@
     body {
       margin: 0;
       background:
-        radial-gradient(ellipse at 85% 0%, rgba(255,139,54,.08), transparent 35%),
-        var(--bg);
+        var(--wallpaper) center / cover fixed no-repeat;
       color: var(--text);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
